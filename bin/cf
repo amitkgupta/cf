@@ -6,6 +6,10 @@ require "rubygems"
 require "cf"
 require "cf/plugin"
 
+require "json/ext"
+require "multi_json"
+require "multi_json/adapters/json_gem"
+
 $stdout.sync = true
 
 CF::Plugin.load_all

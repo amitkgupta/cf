@@ -7,7 +7,7 @@ source "http://rubygems.org"
 gemspec
 
 #gem "cfoundry", :path => "../cfoundry"
-
-group :development do
-  gem 'anchorman', github: 'infews/anchorman'
-end
+gem 'dalli'
+gem 'thread_safe'
+gem 'multi_json'
+gem 'json_pure'
