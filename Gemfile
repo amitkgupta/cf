@@ -7,7 +7,7 @@ source "http://rubygems.org"
 gemspec
 
 #gem "cfoundry", :path => "../cfoundry"
-gem 'dalli'
-gem 'thread_safe'
-gem 'multi_json'
-gem 'json_pure'
+
+# See the `cf` script in the `bin` directory for why we need
+# `test_declarative` to create the Windows executable.
+gem 'test_declarative'

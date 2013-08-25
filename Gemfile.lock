@@ -41,7 +41,6 @@ GEM
       rubyzip (~> 0.9)
     crack (0.4.1)
       safe_yaml (~> 0.9.0)
-    dalli (2.6.4)
     diff-lcs (1.2.4)
     factory_girl (4.2.0)
       activesupport (>= 3.0.0)
@@ -79,6 +78,7 @@ GEM
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     spruz (0.2.13)
+    test_declarative (0.0.5)
     thread_safe (0.1.2)
       atomic
     tilt (1.4.1)
@@ -95,16 +95,13 @@ PLATFORMS
 DEPENDENCIES
   blue-shell (>= 0.2.2)
   cf!
-  dalli
   factory_girl
   fakefs (~> 0.4.2)
   ffaker (= 1.15)
   gem-release
-  json_pure
-  multi_json
   rake (~> 0.9)
   rspec (~> 2.14)
   rspec-instafail (~> 0.2.4)
   sinatra
-  thread_safe
+  test_declarative
   webmock

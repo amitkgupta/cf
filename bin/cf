@@ -6,9 +6,18 @@ require "rubygems"
 require "cf"
 require "cf/plugin"
 
+# ``multi_json determines its JSON adapter at runtime, and requires
+# the necessary files then.  `ocra`, the tool used to build the 
+# Windows executable needs to know which files will be required
+# up-front, hence the following two lines.
 require "json/ext"
-require "multi_json"
 require "multi_json/adapters/json_gem"
+
+# One of the gems we depend on depends on `i18n`, which in turn has
+# `test_declarative` as a development dependency.  However parts of
+# the `i18n` source autoload tests that blow up if we haven't
+# already required `test_declarative`.
+require "test_declarative"
 
 $stdout.sync = true
 
